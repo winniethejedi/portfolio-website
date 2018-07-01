@@ -7,8 +7,11 @@
 }
 
 .hide {
-    visibility: hidden;
-    height: 0px;
+    display: none;
+}
+
+.show {
+    display: flex;
 }
 
 .header {
@@ -21,11 +24,15 @@
     padding-left: 12px;
 }
 
+.header:hover {
+    cursor: pointer;
+}
+
 .contents {
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 .image-link {
@@ -42,14 +49,18 @@
     background-color: #00A6ED;
     position: fixed;
     top: 0;
-    /* height: 10vh; */
+    height: 10vh;
+}
+
+#main-header:hover{
+    cursor: default;
 }
 
 /* About Me */
 
 #about-me-header {
     background-color: #0D2C54;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 /* Profiles */
