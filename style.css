@@ -1,0 +1,71 @@
+/* Multiple Use */
+
+.image-link {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Header */
+
+/* About Me */
+
+/* Profiles */
+
+.profiles-contents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#github {
+    background-image: url("./assets/GitHub-Mark-120px-plus.png" )
+}
+
+#linkedin {
+    background-image: url("./assets/In-2C-128px-TM.png")
+}
+
+/* Knowledge */
+
+.knowledge-contents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#javascript {
+    background-image: url('./assets/240px-JavaScript-logo.png')
+}
+
+#react {
+    background-image: url('./assets/320px-React-icon.svg.png')
+}
+
+#node {
+    background-image: url('./assets/nodejs-new-pantone-black-use.png')
+}
+
+#sass {
+    background-image: url('./assets/sass.png')
+}
+
+#html5 {
+    background-image: url('./assets/HTML5_Logo_512.png')
+}
+
+/* Projects */
+
+.projects-contents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#dev-code-bar {
+    background-image: url('./assets/dev-code-bar.png');
+}
