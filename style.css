@@ -2,18 +2,28 @@
   margin: 0;
   font-family: "Slabo 27px", serif;
   padding: 0;
+  font-size: 12px;
 }
 
+h1, h2 {
+  font-size: 16vw;
+  color: white;
+}
+
+@media (min-width: 961px) {
+  h1, h2 {
+    font-size: 153px;
+  }
+}
 #about-me-header {
   background-color: #0D2C54;
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 #main-header {
   background-color: #00A6ED;
   position: fixed;
   top: 0;
-  height: 10vh;
 }
 
 #main-header:hover {
@@ -65,7 +75,7 @@
 }
 
 .hide {
-  display: none;
+  display: flex;
 }
 
 .show {
@@ -91,6 +101,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 20px;
+  min-height: 500px;
 }
 
 .image-link {
@@ -99,4 +110,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 768px) {
+  .hide {
+    display: none;
+  }
 }
