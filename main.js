@@ -5,6 +5,6 @@ const $contents = $('.contents');
 
 $(document).ready(() => {
     $header.on('click', event => {
-        $(event.currentTarget).siblings('.contents').toggleClass('hide').toggleClass('show');
+        $(event.currentTarget).siblings('.contents').toggleClass('hide', 8000, "easeOutSine");
     }) 
 });

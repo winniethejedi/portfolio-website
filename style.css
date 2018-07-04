@@ -74,14 +74,6 @@ h1, h2 {
   background-image: url("./assets/dev-code-bar.png");
 }
 
-.hide {
-  display: flex;
-}
-
-.show {
-  display: flex;
-}
-
 .header {
   height: 20vh;
   width: 100%;
@@ -90,6 +82,7 @@ h1, h2 {
   align-items: center;
   margin: 0px;
   padding-left: 20%;
+  display: flex;
 }
 
 .header:hover {
@@ -97,6 +90,7 @@ h1, h2 {
 }
 
 .contents {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -114,6 +108,8 @@ h1, h2 {
 
 @media (max-width: 768px) {
   .hide {
-    display: none;
+    display: none !important;
+    max-height: 0px;
+    transition: all 10s;
   }
 }
