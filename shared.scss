@@ -1,0 +1,36 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.header {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    padding-left: 20%;
+}
+
+.header:hover {
+    cursor: pointer;
+}
+
+.contents {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.image-link {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

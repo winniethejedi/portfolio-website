@@ -1,114 +1,102 @@
-/* Multiple Use */
-
 * {
-    margin: 0;
-    font-family: 'Slabo 27px', serif;
-    padding: 0;
+  margin: 0;
+  font-family: "Slabo 27px", serif;
+  padding: 0;
 }
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: flex;
-}
-
-.header {
-    height: 20vh;
-    width: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0px;
-    padding-left: 12px;
-}
-
-.header:hover {
-    cursor: pointer;
-}
-
-.contents {
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-
-.image-link {
-    width: 120px;
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* Header */
-
-#main-header {
-    background-color: #00A6ED;
-    position: fixed;
-    top: 0;
-    height: 10vh;
-}
-
-#main-header:hover{
-    cursor: default;
-}
-
-/* About Me */
 
 #about-me-header {
-    background-color: #0D2C54;
-    margin-top: 10vh;
+  background-color: #0D2C54;
+  margin-top: 10vh;
 }
 
-/* Profiles */
-
-#profiles-header {
-    background-color: #7FB800;
+#main-header {
+  background-color: #00A6ED;
+  position: fixed;
+  top: 0;
+  height: 10vh;
 }
 
-#github {
-    background-image: url("./assets/GitHub-Mark-120px-plus.png" )
+#main-header:hover {
+  cursor: default;
 }
-
-#linkedin {
-    background-image: url("./assets/In-2C-128px-TM.png")
-}
-
-/* Knowledge */
 
 #knowledge-header {
-    background-color: #FFB400;
+  background-color: #FFB400;
 }
 
 #javascript {
-    background-image: url('./assets/240px-JavaScript-logo.png')
+  background-image: url("./assets/240px-JavaScript-logo.png");
 }
 
 #react {
-    background-image: url('./assets/320px-React-icon.svg.png')
+  background-image: url("./assets/320px-React-icon.svg.png");
 }
 
 #node {
-    background-image: url('./assets/nodejs-new-pantone-black-use.png')
+  background-image: url("./assets/nodejs-new-pantone-black-use.png");
 }
 
 #sass {
-    background-image: url('./assets/sass.png')
+  background-image: url("./assets/sass.png");
 }
 
 #html5 {
-    background-image: url('./assets/HTML5_Logo_512.png')
+  background-image: url("./assets/HTML5_Logo_512.png");
 }
 
-/* Projects */
+#profiles-header {
+  background-color: #7FB800;
+}
+
+#github {
+  background-image: url("./assets/GitHub-Mark-120px-plus.png");
+}
+
+#linkedin {
+  background-image: url("./assets/In-2C-128px-TM.png");
+}
 
 #projects-header {
-    background-color: #F6511D;
+  background-color: #F6511D;
 }
 
 #dev-code-bar {
-    background-image: url('./assets/dev-code-bar.png');
+  background-image: url("./assets/dev-code-bar.png");
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.header {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  padding-left: 20%;
+}
+
+.header:hover {
+  cursor: pointer;
+}
+
+.contents {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.image-link {
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
