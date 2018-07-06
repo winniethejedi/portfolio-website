@@ -1,0 +1,18 @@
+#main-header {
+    background-color: #00A6ED;
+    // position: sticky;
+    // top: 0;
+    &:hover {
+        cursor: default;
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h1 {
+        padding-right: 20%;
+    }
+}
+
+#menu-button {
+    background-image: url('./assets/baseline_menu_white_48dp.png');
+}

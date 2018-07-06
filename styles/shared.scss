@@ -7,10 +7,18 @@
     margin: 0px;
     padding-left: 20%;
     display: flex;
-}
-
-.header:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
+    .fixed-header & {
+        position: fixed;
+        top: 10px;
+    }
+    h1 {
+        font-size:  calc(4vw + 4vh + 2vmin);
+    }
+    font-size:  calc(4vw + 4vh + 2vmin);
+    color: white;
 }
 
 .contents {
@@ -33,7 +41,8 @@
 @media (max-width: 768px) {
     .hide {
         display: none !important;
-        max-height: 0px;
-        transition: all 10s;
+        // visibility: hidden;
+        // max-height: 0px;
+        // transition: visibility 0s, opacity 0.5s linear;
     }
 }
