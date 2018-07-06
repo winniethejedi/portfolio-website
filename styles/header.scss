@@ -1,24 +1,39 @@
 #main-header {
     background-color: #00A6ED;
-    // position: sticky;
-    // top: 0;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
     &:hover {
         cursor: default;
     }
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    h1 {
-        padding-right: 20%;
-    }
     .material-icons {
         font-size: 48px;
-    }
-    .hide {
-        display: none;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
-// #menu-button {
-//     background-image: url('./assets/baseline_menu_white_48dp.png');
-// }
+.hide-menu {
+    display: none;
+}
+
+.show-menu {
+    display: block;
+}
+
+.nav-menu {
+    // height: 200px;
+    // width: 200px;
+    position: fixed;
+    top: 20vh;
+    right: 20%;
+}
+
+.menu {
+    padding-right: 20%;
+}

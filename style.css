@@ -7,22 +7,45 @@
 
 #about-me-header {
   background-color: #0D2C54;
+  margin-top: 10vh;
 }
 
 #main-header {
   background-color: #00A6ED;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 #main-header:hover {
   cursor: default;
 }
-#main-header h1 {
-  padding-right: 20%;
-}
 #main-header .material-icons {
   font-size: 48px;
+}
+#main-header .material-icons:hover {
+  cursor: pointer;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 20vh;
+  right: 20%;
+}
+
+.menu {
+  padding-right: 20%;
 }
 
 #knowledge-header {
@@ -76,11 +99,11 @@
 
 .header {
   height: 20vh;
-  width: 100%;
   justify-content: flex-start;
   align-items: center;
   margin: 0px;
   padding-left: 20%;
+  padding-right: 20%;
   display: flex;
   font-size: calc(4vw + 4vh + 2vmin);
   color: white;
@@ -88,12 +111,8 @@
 .header:hover {
   cursor: pointer;
 }
-.fixed-header .header {
-  position: fixed;
-  top: 10px;
-}
 .header h1 {
-  font-size: calc(4vw + 4vh + 2vmin);
+  font-size: calc(2vw + 2vh + 1vmin);
 }
 
 .contents {
