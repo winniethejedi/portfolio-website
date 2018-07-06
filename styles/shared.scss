@@ -1,7 +1,6 @@
 .header {
     height: 20vh;
     width: 100%;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 0px;
@@ -41,8 +40,5 @@
 @media (max-width: 768px) {
     .hide {
         display: none !important;
-        // visibility: hidden;
-        // max-height: 0px;
-        // transition: visibility 0s, opacity 0.5s linear;
     }
 }

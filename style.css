@@ -21,9 +21,8 @@
 #main-header h1 {
   padding-right: 20%;
 }
-
-#menu-button {
-  background-image: url("./assets/baseline_menu_white_48dp.png");
+#main-header .material-icons {
+  font-size: 48px;
 }
 
 #knowledge-header {
@@ -78,7 +77,6 @@
 .header {
   height: 20vh;
   width: 100%;
-  display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0px;
