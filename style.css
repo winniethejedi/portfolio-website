@@ -15,6 +15,31 @@ a {
   margin-top: 10vh;
 }
 
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  height: 10vh;
+  color: white;
+}
+footer p {
+  padding-right: 10px;
+  padding-left: 10%;
+  font-size: 20px;
+}
+footer a {
+  font-size: 20px;
+}
+footer a:hover {
+  color: #00A6ED;
+}
+footer .footer-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 #main-header {
   background-color: #00A6ED;
   height: 10vh;
@@ -76,17 +101,29 @@ a {
 #about-me-button {
   background-color: #0D2C54;
 }
+#about-me-button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 #profiles-button {
   background-color: #7FB800;
+}
+#profiles-button:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #knowledge-button {
   background-color: #FFB400;
 }
+#knowledge-button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 #projects-button {
   background-color: #F6511D;
+}
+#projects-button:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #knowledge-header {
@@ -129,13 +166,16 @@ a {
   background-color: #F6511D;
 }
 
-#dev-code-bar {
-  background-image: url("./assets/dev-code-bar.png");
+.project-link {
+  min-width: 450px;
+  min-height: 220px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#projects-carousel {
-  height: 400px;
-  width: 500px;
+#dev-code-bar {
+  background-image: url("./assets/dev-code-bar.png");
 }
 
 .header {
@@ -164,10 +204,20 @@ a {
   min-height: 500px;
   color: black;
 }
+.contents a {
+  color: black;
+  text-align: center;
+}
+.contents a p {
+  font-size: 20px;
+}
+.contents a:hover {
+  color: #00A6ED;
+}
 
 .image-link {
-  width: 120px;
-  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

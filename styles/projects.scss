@@ -4,11 +4,15 @@
     // top: 0;
 }
 
+.project-link {
+    min-width: 450px;
+    min-height: 220px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #dev-code-bar {
     background-image: url('./assets/dev-code-bar.png');
 }
 
-#projects-carousel {
-    height: 400px;
-    width: 500px;
-}

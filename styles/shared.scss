@@ -24,11 +24,21 @@
     margin: 20px;
     min-height: 500px;
     color: black;
+    a {
+        color: black;
+        text-align: center;
+        p {
+            font-size: 20px;
+        }
+        &:hover {
+            color: #00A6ED
+        }
+    }
 }
 
 .image-link {
-    width: 120px;
-    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

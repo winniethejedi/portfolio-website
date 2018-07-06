@@ -62,16 +62,28 @@
 
 #about-me-button {
     background-color:  #0D2C54;
+    &:hover {
+        color: rgba(255, 255, 255, 0.5)
+    }
 }
 
 #profiles-button {
     background-color: #7FB800;
+    &:hover {
+        color: rgba(255, 255, 255, 0.5)
+    }
 }
 
 #knowledge-button {
     background-color: #FFB400;
+    &:hover {
+        color: rgba(255, 255, 255, 0.5)
+    }
 }
 
 #projects-button {
     background-color: #F6511D;
+    &:hover {
+        color: rgba(255, 255, 255, 0.5)
+    }
 }
