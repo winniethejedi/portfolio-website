@@ -5,6 +5,11 @@
   font-size: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #about-me-header {
   background-color: #0D2C54;
   margin-top: 10vh;
@@ -14,10 +19,11 @@
   background-color: #00A6ED;
   height: 10vh;
   position: fixed;
+  padding-left: 0;
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 #main-header:hover {
@@ -38,14 +44,49 @@
   display: block;
 }
 
-.nav-menu {
-  position: fixed;
-  top: 20vh;
-  right: 20%;
+.menu {
+  position: relative;
 }
 
-.menu {
-  padding-right: 20%;
+.nav-menu {
+  position: absolute;
+  left: -127px;
+  top: 46px;
+}
+
+.nav-menu {
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 7px;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.nav-button {
+  margin: 7px;
+  padding: 7px;
+  border-radius: 20px;
+  text-align: center;
+}
+.nav-button:hover {
+  cursor: pointer;
+}
+
+#about-me-button {
+  background-color: #0D2C54;
+}
+
+#profiles-button {
+  background-color: #7FB800;
+}
+
+#knowledge-button {
+  background-color: #FFB400;
+}
+
+#projects-button {
+  background-color: #F6511D;
 }
 
 #knowledge-header {
@@ -103,7 +144,6 @@
   align-items: center;
   margin: 0px;
   padding-left: 20%;
-  padding-right: 20%;
   display: flex;
   font-size: calc(4vw + 4vh + 2vmin);
   color: white;
@@ -122,6 +162,7 @@
   flex-wrap: wrap;
   margin: 20px;
   min-height: 500px;
+  color: black;
 }
 
 .image-link {
