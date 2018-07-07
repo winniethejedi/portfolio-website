@@ -10,9 +10,18 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    &:hover .tool-tip{
+        visibility: visible;
+        top: 100px;
+        left: 173px;
+    }
 }
 
 #dev-code-bar {
     background-image: url('./assets/dev-code-bar.png');
+}
+#find-recipes {
+    background-image: url('./assets/find-recipes.png');
 }
 

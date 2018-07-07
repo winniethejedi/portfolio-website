@@ -2,8 +2,9 @@ const $hide = $('.hide');
 const $header = $('.header');
 const $contents = $('.contents');
 const $show = $('.show');
-const $navMenu = $('#nav-menu');
+const $navMenu = $('.nav-menu');
 const $menu = $('#menu');
+const $navButton = $('.nav-button');
 
 
 $(document).ready(() => {
@@ -11,7 +12,9 @@ $(document).ready(() => {
         $(event.currentTarget).siblings('.contents').toggleClass('hide').toggleClass('show');
     });
     $menu.on('click', event => {
-        console.log($(event.currentTarget).siblings('.nav-menu'));
         $(event.currentTarget).siblings('.nav-menu').toggleClass('hide-menu').toggleClass('show-menu');
+    })
+    $navButton.on('click', event => {
+        $navMenu.toggleClass('hide-menu').toggleClass('show-menu');
     })
 });

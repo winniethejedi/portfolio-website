@@ -46,6 +46,7 @@ footer .footer-link {
   padding-left: 0;
   top: 0;
   width: 100%;
+  z-index: 2;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -171,10 +172,20 @@ footer .footer-link {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+.project-link:hover .tool-tip {
+  visibility: visible;
+  top: 100px;
+  left: 173px;
 }
 
 #dev-code-bar {
   background-image: url("./assets/dev-code-bar.png");
+}
+
+#find-recipes {
+  background-image: url("./assets/find-recipes.png");
 }
 
 .header {
@@ -220,6 +231,24 @@ footer .footer-link {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+.image-link:hover .tool-tip {
+  visibility: visible;
+  left: 15px;
+  top: 129px;
+}
+
+.tool-tip {
+  visibility: hidden;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 90px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
