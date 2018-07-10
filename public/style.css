@@ -198,9 +198,6 @@ footer .footer-link {
   font-size: calc(4vw + 4vh + 2vmin);
   color: white;
 }
-.header:hover {
-  cursor: pointer;
-}
 .header h1 {
   font-size: calc(2vw + 2vh + 1vmin);
 }
@@ -254,5 +251,9 @@ footer .footer-link {
 @media (max-width: 768px) {
   .hide {
     display: none !important;
+  }
+
+  .header:hover {
+    cursor: pointer;
   }
 }

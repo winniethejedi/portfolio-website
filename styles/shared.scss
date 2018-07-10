@@ -6,14 +6,14 @@
     margin: 0px;
     padding-left: 20%;
     display: flex;
-    &:hover {
-        cursor: pointer;
-    }
     h1 {
         font-size:  calc(2vw + 2vh + 1vmin);
     }
     font-size:  calc(4vw + 4vh + 2vmin);
     color: white;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .contents {
