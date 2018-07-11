@@ -201,6 +201,9 @@ footer .footer-link {
 .header h1 {
   font-size: calc(2vw + 2vh + 1vmin);
 }
+.header:hover {
+  cursor: pointer;
+}
 
 .contents {
   display: flex;
@@ -251,9 +254,5 @@ footer .footer-link {
 @media (max-width: 768px) {
   .hide {
     display: none !important;
-  }
-
-  .header:hover {
-    cursor: pointer;
   }
 }
