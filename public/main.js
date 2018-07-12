@@ -63,6 +63,11 @@ $('a[href*="#"]')
 
     //hide the menu when clicking on a nav-button
     $navButton.on('click', event => {
+        const contentsId = `#${event.currentTarget.id.slice(0, event.currentTarget.id.lastIndexOf('-'))}-contents`;
+        console.log(contentsId);
         $navMenu.toggleClass('hide-menu').toggleClass('show-menu');
+        if (!$(contentsId).hasClass('show')) {
+            $(contentsId).toggleClass('hide').toggleClass('show');
+        }
     })
 });
