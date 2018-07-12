@@ -16,9 +16,7 @@ a {
 }
 
 #about-me-contents {
-  background-image: url("./assets/Capture.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(13, 44, 84, 0.5);
 }
 
 footer {
@@ -137,9 +135,7 @@ footer .footer-link {
 }
 
 #knowledge-contents {
-  background-image: url("./assets/Capture.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(255, 180, 0, 0.5);
 }
 
 #javascript {
@@ -167,9 +163,7 @@ footer .footer-link {
 }
 
 #profiles-contents {
-  background-image: url("./assets/Capture.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(127, 184, 0, 0.5);
 }
 
 #github {
@@ -185,9 +179,7 @@ footer .footer-link {
 }
 
 #projects-contents {
-  background-image: url("./assets/Capture.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(246, 81, 29, 0.5);
 }
 
 .project-link {
@@ -257,8 +249,6 @@ footer .footer-link {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
   margin: 10px;
   position: relative;
 }
