@@ -213,8 +213,11 @@ footer .footer-link {
   margin: 20px;
   min-height: 500px;
   color: black;
-  padding: 20px;
+  padding: 30px;
   margin: 0;
+}
+.contents p {
+  width: 80%;
 }
 .contents a {
   color: black;
