@@ -24,7 +24,7 @@
     margin: 20px;
     min-height: 500px;
     color: black;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     a {
         color: black;
@@ -46,8 +46,8 @@
     background-position: center;
     margin: 10px;
     position: relative;
-    background-color: rgba(255,255, 255, 0.9);
-    border-radius: 20px;
+    // background-color: rgba(255,255, 255, 0.9);
+    // border-radius: 20px;
     &:hover .tool-tip{
         visibility: visible;
         left: 15px;

@@ -15,10 +15,6 @@ a {
   margin-top: 10vh;
 }
 
-#about-me-contents {
-  background-color: rgba(13, 44, 84, 0.5);
-}
-
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -134,12 +130,6 @@ footer .footer-link {
   background-color: #FFB400;
 }
 
-#knowledge-contents {
-  background-image: url("./assets/Capture.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #javascript {
   background-image: url("./assets/240px-JavaScript-logo.png");
 }
@@ -164,10 +154,6 @@ footer .footer-link {
   background-color: #7FB800;
 }
 
-#profiles-contents {
-  background-color: white;
-}
-
 #github {
   background-image: url("./assets/GitHub-Mark-120px-plus.png");
 }
@@ -178,10 +164,6 @@ footer .footer-link {
 
 #projects-header {
   background-color: #F6511D;
-}
-
-#projects-contents {
-  background-color: rgba(246, 81, 29, 0.5);
 }
 
 .project-link {
@@ -231,7 +213,7 @@ footer .footer-link {
   margin: 20px;
   min-height: 500px;
   color: black;
-  padding: 0;
+  padding: 20px;
   margin: 0;
 }
 .contents a {
@@ -253,8 +235,6 @@ footer .footer-link {
   background-position: center;
   margin: 10px;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
 }
 .image-link:hover .tool-tip {
   visibility: visible;
