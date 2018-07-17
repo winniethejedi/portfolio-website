@@ -2,24 +2,25 @@
     margin: 0;
     font-family: 'Slabo 27px', serif;
     padding: 0;
-    font-size: 12px;
+    font-size: 30px;
 }
 
-h1, h2 {
-    font-size:  16vw;
+a {
+    text-decoration: none;
     color: white;
 }
 
-@media (min-width: 961px) {
-    h1, h2 {
-        font-size: 153px;
-    }
-}
+// @media (min-width: 961px) {
+//     h1, h2 {
+//         font-size: 153px;
+//     }
+// }
 
 
-@import 'about-me.scss'; 
-@import 'header.scss'; 
-@import 'knowledge.scss'; 
-@import 'profiles.scss'; 
-@import 'projects.scss'; 
-@import 'shared.scss'; 
+@import './styles/about-me.scss'; 
+@import './styles/footer.scss'; 
+@import './styles/header.scss'; 
+@import './styles/knowledge.scss'; 
+@import './styles/profiles.scss'; 
+@import './styles/projects.scss'; 
+@import './styles/shared.scss'; 

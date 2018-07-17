@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  font-family: "Slabo 27px", serif;
+  padding: 0;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#about-me-header {
+  background-color: #0D2C54;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  height: 10vh;
+  color: white;
+}
+footer p {
+  padding-right: 10px;
+  font-size: 20px;
+}
+footer a {
+  font-size: 20px;
+}
+footer a:hover {
+  color: #00A6ED;
+}
+footer .footer-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#main-header {
+  background-color: #00A6ED;
+  height: 10vh;
+  position: fixed;
+  padding-left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#main-header:hover {
+  cursor: default;
+}
+#main-header .material-icons {
+  font-size: 48px;
+}
+#main-header .material-icons:hover {
+  cursor: pointer;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+.menu {
+  position: relative;
+}
+
+.nav-menu {
+  position: absolute;
+  left: -127px;
+  top: 46px;
+}
+
+.nav-menu {
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 7px;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.nav-button {
+  margin: 7px;
+  padding: 7px;
+  border-radius: 20px;
+  text-align: center;
+}
+.nav-button:hover {
+  cursor: pointer;
+}
+
+#about-me-button {
+  background-color: #0D2C54;
+}
+#about-me-button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#profiles-button {
+  background-color: #7FB800;
+}
+#profiles-button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#knowledge-button {
+  background-color: #FFB400;
+}
+#knowledge-button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#projects-button {
+  background-color: #F6511D;
+}
+#projects-button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#knowledge-header {
+  background-color: #FFB400;
+}
+
+.caption {
+  font-size: 16px;
+  width: 90px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  left: 15px;
+  top: 129px;
+}
+
+#javascript {
+  background-image: url("./assets/240px-JavaScript-logo.png");
+}
+
+#react {
+  background-image: url("./assets/320px-React-icon.svg.png");
+}
+
+#node {
+  background-image: url("./assets/nodejs-new-pantone-black-use.png");
+}
+
+#sass {
+  background-image: url("./assets/sass.png");
+}
+
+#html5 {
+  background-image: url("./assets/HTML5_Logo_512.png");
+}
+
+#profiles-header {
+  background-color: #7FB800;
+  margin-top: 10vh;
+}
+
+#github {
+  background-image: url("./assets/GitHub-Mark-120px-plus.png");
+}
+
+#linkedin {
+  background-image: url("./assets/In-2C-128px-TM.png");
+}
+
+#projects-header {
+  background-color: #F6511D;
+}
+
+.project-link-box h3 {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.project-link {
+  min-width: 450px;
+  min-height: 220px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.project-link:hover .tool-tip {
+  visibility: visible;
+  top: 100px;
+  left: 173px;
+}
+
+.project-description p {
+  font-size: 20px;
+  margin: 15px;
+  max-width: 434px;
+}
+
+#dev-code-bar {
+  background-image: url("./assets/dev-code-bar.png");
+}
+
+#find-recipes {
+  background-image: url("./assets/find-recipes.png");
+}
+
+.header {
+  height: 20vh;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  padding-left: 20%;
+  display: flex;
+  font-size: calc(4vw + 4vh + 2vmin);
+  color: white;
+}
+.header h1 {
+  font-size: calc(2vw + 2vh + 1vmin);
+}
+.header:hover {
+  cursor: pointer;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  min-height: 500px;
+  color: black;
+  padding: 30px;
+  margin: 0;
+}
+.contents p {
+  width: 80%;
+}
+.contents a {
+  color: black;
+  text-align: center;
+}
+.contents a p {
+  font-size: 20px;
+}
+.contents a:hover {
+  color: #00A6ED;
+}
+
+.image-link {
+  min-width: 120px;
+  min-height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+  position: relative;
+}
+.image-link:hover .tool-tip {
+  visibility: visible;
+  left: 15px;
+  top: 129px;
+}
+
+.tool-tip {
+  visibility: hidden;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 90px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hide {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

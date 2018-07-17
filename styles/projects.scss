@@ -1,0 +1,44 @@
+#projects-header {
+    background-color: #F6511D;
+    // position: sticky;
+    // top: 0;
+}
+
+// #projects-contents {
+//     background-color: rgba(246, 81, 29, 0.5);
+// }
+
+.project-link-box {
+    h3 {
+        text-align: center;
+        margin-bottom: 7px;
+    }
+}
+
+.project-link {
+    min-width: 450px;
+    min-height: 220px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &:hover .tool-tip{
+        visibility: visible;
+        top: 100px;
+        left: 173px;
+    }
+}
+
+.project-description p {
+    font-size:  20px;
+    margin: 15px;
+    max-width: 434px;
+}
+
+#dev-code-bar {
+    background-image: url('./assets/dev-code-bar.png');
+}
+#find-recipes {
+    background-image: url('./assets/find-recipes.png');
+}
+

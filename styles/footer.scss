@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 10vh;
+    color: white;
+    p {
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    a {
+        font-size: 20px;
+        &:hover{
+            color: #00A6ED;
+        }
+    }
+    .footer-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
