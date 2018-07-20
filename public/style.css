@@ -12,6 +12,7 @@ a {
 
 #about-me-header {
   background-color: #0D2C54;
+  margin-top: 10vh;
 }
 
 footer {
@@ -162,7 +163,6 @@ footer .footer-link {
 
 #profiles-header {
   background-color: #7FB800;
-  margin-top: 10vh;
 }
 
 #github {
