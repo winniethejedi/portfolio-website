@@ -87,18 +87,89 @@ $('a[href*="#"]')
       const lastHyphenIndex = currentTargetId.lastIndexOf('-');
       const direction = currentTargetId.substring(lastHyphenIndex + 1);
 
-      const visibleContent = $('.knowledge-contents-slide:visible');
-      const visibleContentId = visibleContent.attr('id');
-      const visibleLastHyphenIndex = visibleContentId.lastIndexOf('-');
-      const contentNumString = visibleContentId.substring(visibleLastHyphenIndex + 1);
-      const contentNum = parseInt(contentNumString, 10);
+      const visibleSlide = $('.knowledge-contents-slide:visible');
+      const slideNum = getSlideNumber(visibleSlide);
 
-      debugger;
-
-      changeSlide(direction, contentNum)
+      changeSlide(direction, slideNum)
     })
 });
 
-function changeSlide() {
-  
+function changeSlide(direction, slideNum) {
+  const idBeginning = '#knowledge-contents-';
+  let newSlideNum;
+
+  if (direction === 'left') {
+    newSlideNum = changeSlideLeft(slideNum, );
+  }
+  else if (direction === 'right') {
+    newSlideNum = changeSlideRight(slideNum)
+  }
+
+  $(idBeginning + slideNum).addClass('slideshow-hidden');
+  $(idBeginning + newSlideNum).removeClass('slideshow-hidden');
+}
+
+function changeSlideLeft(slideNum) {
+  const slideNumbers = getSlideNumbers();
+  const min = getMinSlideNumber(slideNumbers);
+  let slideToChangeTo = slideNum - 1;
+
+  if (slideNum <= min) {
+    const max = getMaxSlideNumber(slideNumbers);
+    slideToChangeTo = max;
+  }
+
+  return slideToChangeTo;
+}
+
+function changeSlideRight(slideNum) {
+  const slideNumbers = getSlideNumbers();
+  const max = getMaxSlideNumber(slideNumbers);
+  let slideToChangeTo = slideNum + 1;
+
+  if (slideNum >= max){
+    const min = getMinSlideNumber(slideNumbers);
+    slideToChangeTo = min;
+  }
+
+  return slideToChangeTo;
+}
+
+function getSlideNumbers() {
+  const slideNumbers = [];
+  const knowledgeContents = $('.knowledge-contents-slide');
+
+  knowledgeContents.each((i, e) => {
+    const slideNum = getSlideNumber(e);
+    slideNumbers.push(slideNum);
+  });
+
+  return slideNumbers;
+}
+
+function getMaxSlideNumber(slideNumbers) {
+  const max = Math.max(...slideNumbers);
+  return max;
+}
+
+function getMinSlideNumber(slideNumbers) {
+  const min = Math.min(...slideNumbers);
+  return min;
+}
+
+function getSlideNumber(element) {
+  let elementId;
+
+  if (typeof element.attr === 'function') {
+    elementId = element.attr('id');
+  }
+  else {
+    elementId = element.id;
+  }
+
+  const lastHyphenIndex = elementId.lastIndexOf('-');
+  const slideNumString = elementId.substring(lastHyphenIndex + 1);
+  const slideNum = parseInt(slideNumString, 10);
+
+  return slideNum;
 }
