@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.min.css"> -->
 </head>
 
 <header class='header' id='main-header'>
@@ -79,10 +79,10 @@
             <h2 class='header' id="knowledge-header">Knowledge</h2>
         </a>
         <div class='contents hide' id="knowledge-contents">
-            <div id="knowledge-left-button">
+            <div id="knowledge-button-left" class="knowledge-direction-button">
                 < 
             </div>
-                <div id="knowledge-contents-1">
+                <div id="knowledge-contents-1" class="knowledge-contents-slide">
                     <div class="image-link" id="javascript">
                         <span class='caption'>JavaScript</span>
                     </div>
@@ -99,7 +99,15 @@
                         <span class='caption'>HTML</span>
                     </div>
                 </div>
-            <div id="knowledge-right-button">
+                <div id="knowledge-contents-2" class="knowledge-contents-slide">
+                    <div class="image-link" id="c-sharp">
+                        <span class="caption">C#</span>
+                    </div>
+                    <div class="image-link" id="jquery">
+                        <span class="caption">jQuery</span>
+                    </div>
+                </div>
+            <div id="knowledge-button-right" class="knowledge-direction-button">
                 >
             </div>
         </div>

@@ -6,9 +6,12 @@ const $navMenu = $('.nav-menu');
 const $menu = $('#menu');
 const $navButton = $('.nav-button');
 const $headerLink = $('.header-link');
-const windowHeight = $(window).height();
+const $windowHeight = $(window).height();
+const $leftButton = $('#knowledge-left-button');
+const $rightButton = $('#knowledge-right-button');
+const $knowledgeDirectionButtons = $('.knowledge-direction-button');
 // const offset = $(':target').offset();
-// const scrollto = offset.top - (0.1 * windowHeight);
+// const scrollto = offset.top - (0.1 * $windowHeight);
 
 
 $(document).ready(() => {
@@ -34,7 +37,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top - (0.1 * windowHeight)
+          scrollTop: target.offset().top - (0.1 * $windowHeight)
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
@@ -70,4 +73,32 @@ $('a[href*="#"]')
             $(contentsId).toggleClass('hide').toggleClass('show');
         }
     })
+
+    $leftButton.on('click', event => {
+      console.log(event);
+    })
+
+    $rightButton.on('click', event => {
+      console.log(event);
+    })
+
+    $knowledgeDirectionButtons.on('click', event => {
+      const currentTargetId = event.currentTarget.id;
+      const lastHyphenIndex = currentTargetId.lastIndexOf('-');
+      const direction = currentTargetId.substring(lastHyphenIndex + 1);
+
+      const visibleContent = $('.knowledge-contents-slide:visible');
+      const visibleContentId = visibleContent.attr('id');
+      const visibleLastHyphenIndex = visibleContentId.lastIndexOf('-');
+      const contentNumString = visibleContentId.substring(visibleLastHyphenIndex + 1);
+      const contentNum = parseInt(contentNumString, 10);
+
+      debugger;
+
+      changeSlide(direction, contentNum)
+    })
 });
+
+function changeSlide() {
+  
+}

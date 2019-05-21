@@ -161,6 +161,26 @@ footer .footer-link {
   background-image: url("./assets/HTML5_Logo_512.png");
 }
 
+#c-sharp {
+  background-image: url("./assets/c-sharp-logo.png");
+}
+
+#jquery {
+  background-image: url("./assets/jQuery-Logo.jpg");
+}
+
+.knowledge-contents-slide {
+  display: flex;
+}
+
+.slideshow-hidden {
+  display: hidden;
+}
+
+.knowledge-direction-button {
+  cursor: pointer;
+}
+
 #profiles-header {
   background-color: #7FB800;
 }
@@ -284,5 +304,3 @@ footer .footer-link {
     display: none !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
