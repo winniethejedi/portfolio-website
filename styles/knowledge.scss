@@ -42,15 +42,20 @@
 }
 
 #c-sharp {
-    background-image: url('./assets/c-sharp-logo.png');
+    background-image: url('./assets/c-sharp-logo2.png');
 }
 
 #jquery {
     background-image: url('./assets/jQuery-Logo.jpg');
 }
 
+#css-logo {
+    background-image: url('./assets/css-logo.png');
+}
+
 .knowledge-contents-slide {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .slideshow-hidden {
@@ -59,4 +64,22 @@
 
 .knowledge-direction-button {
     cursor: pointer;
+}
+
+@media (max-width: 776px) {
+    #html5 {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 496px) {
+    #css-logo {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 496px) and (min-width: 356px) {
+    #dot-net {
+        margin-top: 35px;
+    }
 }
