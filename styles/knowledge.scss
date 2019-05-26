@@ -56,6 +56,8 @@
 .knowledge-contents-slide {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .slideshow-hidden {
@@ -66,19 +68,19 @@
     cursor: pointer;
 }
 
-@media (max-width: 776px) {
+@media (max-width: 824px) {
     #html5 {
         margin-top: 35px;
     }
 }
 
-@media (max-width: 496px) {
+@media (max-width: 544px) {
     #css-logo {
         margin-top: 35px;
     }
 }
 
-@media (max-width: 496px) and (min-width: 356px) {
+@media (max-width: 544px) and (min-width: 404px) {
     #dot-net {
         margin-top: 35px;
     }
