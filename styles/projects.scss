@@ -16,7 +16,6 @@
 }
 
 .project-link {
-    min-width: 450px;
     min-height: 220px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -24,8 +23,8 @@
     position: relative;
     &:hover .tool-tip{
         visibility: visible;
-        top: 100px;
-        left: 173px;
+        top: 45%;
+        right: 45%;
     }
 }
 

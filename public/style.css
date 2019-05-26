@@ -236,8 +236,8 @@ footer .footer-link {
 }
 .project-link:hover .tool-tip {
   visibility: visible;
-  top: 100px;
-  left: 173px;
+  top: 45%;
+  right: 45%;
 }
 
 .project-description p {
