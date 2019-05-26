@@ -201,6 +201,10 @@ footer .footer-link {
     margin-top: 35px;
   }
 }
+#knowledge-contents {
+  flex-wrap: nowrap;
+}
+
 #profiles-header {
   background-color: #7FB800;
 }
